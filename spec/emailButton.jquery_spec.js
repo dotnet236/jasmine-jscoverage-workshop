@@ -1,7 +1,5 @@
 describe("When a user is authenticted", function() {
 
-  var $ = window.jQuery;
-
   describe("and the email button is clicked", function() {
 
     it("the user should be prompted with an erroring alert message", function() {
