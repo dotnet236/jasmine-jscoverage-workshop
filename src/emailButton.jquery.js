@@ -1,33 +1,27 @@
 (function($){
 
-  var button = null;
+  var plugin = null;
 
-  var config = {
-    authenticated: false
-  };
+  var config = { };
 
   var methods = {
     init: function(opts) {
       $.extend(config, opts);
 
-      button.click(function(){
-        alert('Gotta authenticate first');
-      });
-
-      return button;
+      return plugin;
     }
   };
 
-  $.fn.emailButton = function( method ) {
+  $.fn.plugin = function( method ) {
 
-    button = this;
+    plugin = this;
 
     if ( methods[method] ) {
       return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof method === 'object' || ! method ) {
       return methods.init.apply( this, arguments );
     } else {
-      $.error( 'Method ' +  method + ' does not exist on jQuery.emailButton' );
+      $.error( 'Method ' +  method + ' does not exist on plugin' );
     }
   };
 

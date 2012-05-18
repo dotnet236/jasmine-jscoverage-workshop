@@ -1,0 +1,5 @@
+Installation Instructions (Mac):
+
+* Verify that you have web sharing enabled.  System Preferences -> Sharing -> Web Sharing
+* cd to ~/Sites
+* git clone 

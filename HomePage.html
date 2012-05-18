@@ -3,11 +3,18 @@
 <html>
 <head>
   <title>Jasmine, JSCoverage Workshop</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+  <script type='text/javascript'>
+    $(function(){
+        $('#Email').click(function(){ 
+          alert('You need to authenticate first');
+        }
+    );
+    });
+  </script>
 </head>
 
 <body>
-  <button id='Login'>Logout</button>
-  <br/>
   <button id='Email'>Email</button>
 </body>
 </html>
